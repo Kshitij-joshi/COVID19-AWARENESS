@@ -1,1 +1,1 @@
-# COVID19-AWARENESS
+This project was created for Zero to Mastery Coding Challenge 8
