@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Covid19 Awareness</title>
+
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <link href='css/bootstrap.css' rel='stylesheet' />
+
+    <link href="css/pe-icon-7-stroke.css" rel="stylesheet" />
+
+<!--     <link href='css/ct-navbar.css' rel='stylesheet' /> -->
+    <link href='css/rotating-card.css' rel='stylesheet' />
+
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+    <style>
+        body{
+            margin-top: 100px;
+        }
+        .navbar-default .navbar-nav > li > a{
+            padding: 15px 15px;
+            margin: 5px 0;
+        }
+
+        .navbar-default{
+            padding: 10px 0;
+            background-color: rgba(255, 255, 255, 0.95);
+            border-color: transparent;
+            box-shadow: 0 0px 13px rgba(0,0,0,.2);
+        }
+        .btn-info,
+        .btn-info:hover,
+        .btn-info:focus{
+            color: #FFF !important;
+            background-color: #00bbff !important;
+            border-color: #00bbff !important;
+        }
+
+        .btn-info{
+            opacity: .8;
+            transition: all 0.1s;
+            -webkit-transition: all 0.1s;
+        }
+        .btn-info:hover,
+        .btn-info:focus{
+            opacity: 1;
+        }
+    </style>
+</head>
+<div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="btn btn-info" href="https://mailchi.mp/9514e9e6164a/covid19" target="_blank">
+                        Get More Usefull information !!
+                    </a>
+                </li>
+           </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="row">
+        <h1 class="title">
+            COVID19 AWARENESS!!
+            <br>
+            <small>Let us all fight this together!</small>
+        </h1>
+        <div class="col-sm-10 col-sm-offset-1">
+         <div class="col-md-4 col-sm-6">
+             <div class="card-container">
+                <div class="card">
+                    <div class="front">
+                        <div class="cover">
+                            <img src="images/rotating_card_thumb2.png"/>
+                        </div>
+                        <div class="user">
+                            <img class="img-circle" src="images/dos.png"/>
+                        </div>
+                        <div class="content">
+                            <div class="main">
+                                <h3 class="name">Hover your cursor</h3>
+                    
+                            </div>
+                            <div class="footer">
+                                <i class="fa fa-mail-forward"></i> Auto Rotation
+                            </div>
+                        </div>
+                    </div> <!-- end front panel -->
+                    <div class="back">                        
+                        <div class="content">
+                            <div class="main">
+                                <h4 class="text-center">1. Wash your hands frequently for 20+ seconds with soap and water <br> <br>
+2. Stay at home and limit contact with others <br><br>
+3. Routinely clean frequently touched spaces in your home<br><br>
+4. Seek medical help if you’re suffering from a fever, cough or difficulty breathing</h4>
+                            </div>
+                        </div>
+                    
+                    </div> <!-- end back panel -->
+                </div> <!-- end card -->
+            </div> <!-- end card-container -->
+        </div> <!-- end col sm 3 -->
+<!--         <div class="col-sm-1"></div> -->
+        <div class="col-md-4 col-sm-6">
+             <div class="card-container manual-flip">
+                <div class="card">
+                    <div class="front">
+                        <div class="cover">
+                            <img src="images/rotating_card_thumb.png"/>
+                        </div>
+                        <div class="user">
+                            <img class="img-circle" src="images/startupkj.png"/>
+                        </div>
+                        <div class="content">
+                            <div class="main">
+                                <h3 class="name">Kshitij Joshi</h3>
+                                <p class="profession">Web Developer</p>
+                                <p class="text-center">Click Below to See, what are the symptoms of COVID19 </p>
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-simple" onclick="rotateCard(this)">
+                                    <i class="fa fa-mail-forward"></i> <strong>CLICK HERE !!!!</strong>
+                                </button>
+                            </div>
+                        </div>
+                    </div> <!-- end front panel -->
+                    <div class="back">
+                        <div class="content">
+                            <div class="main">
+                                <h4 class="text-center"><b>People may experience<b>: <br><br><br>
+1. <em>cough<br><br></em>
+2. <em>Fever<br><br></em>
+3. <em>Tiredness<br><br></em>
+4. <em>Difficulty breathing (severe cases)</em><br><br>
+5 . <em>Persistent pain or pressure in the chest</em><br><br>
+6. <em>New confusion or inability to arouse</em><br><br>
+7. <em>Bluish lips or face</em></h4>
+
+                
+
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <button class="btn btn-simple" rel="tooltip" title="Flip Card" onclick="rotateCard(this)">
+                                <i class="fa fa-reply"></i> Back
+                            </button>
+                        </div>
+                    </div> <!-- end back panel -->
+                </div> <!-- end card -->
+            </div> <!-- end card-container -->
+        </div> <!-- end col sm 3 -->
+<!--         <div class="col-sm-1"></div> -->
+        <div class="col-md-4 col-sm-6">
+            <div class="card-container">
+                <div class="card">
+                    <div class="front">
+                        <div class="cover">
+                            <img src="images/rotating_card_thumb3.png"/>
+                        </div>
+                        <div class="user">
+                            <img class="img-circle" src="images/donts.png"/>
+                        </div>
+                        <div class="content">
+                            <div class="main">
+                                <strong><h3 class="name">Hover your cursor</h3></strong>
+                                
+                            </div>
+                            <div class="footer">
+                                <div class="rating">
+                                    <i class="fa fa-mail-forward"></i> Auto Rotation
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- end front panel -->
+                    <div class="back">
+                        <div class="content">
+                            <div class="main">
+                                <h4 class="text-center">1 .Don’t go to crowded areas<br><br>
+2. Don’t touch your face<br><br>
+3. Don’t be in close contact with others<br><br>
+4. Don’t ignore symptoms<br><br>
+5. Don’t leave your home, especially if sick</strong></h4>
+                        
+
+            
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <div class="social-links text-center">
+                                <a href="https://creative-tim.com" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                                <a href="https://creative-tim.com" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                                <a href="https://creative-tim.com" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                            </div>
+                        </div>
+                    </div> <!-- end back panel -->
+                </div> <!-- end card -->
+            </div> <!-- end card-container -->
+        </div> <!-- end col-sm-3 -->
+        </div> <!-- end col-sm-10 -->
+    </div> <!-- end row -->
+    <div class="space-200"></div>
+</div>
+<div class="coronagov col-lg 12">
+        <img src="images/coronagov.png" width="100%">
+</div>
+
+
+<script src="js/jquery-1.10.2.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+    $().ready(function(){
+        $('[rel="tooltip"]').tooltip();
+
+        $('a.scroll-down').click(function(e){
+            e.preventDefault();
+            scroll_target = $(this).data('href');
+             $('html, body').animate({
+                 scrollTop: $(scroll_target).offset().top - 60
+             }, 1000);
+        });
+
+    });
+
+    function rotateCard(btn){
+        var $card = $(btn).closest('.card-container');
+        console.log($card);
+        if($card.hasClass('hover')){
+            $card.removeClass('hover');
+        } else {
+            $card.addClass('hover');
+        }
+    }
+
+
+</script>
+
+</body>
+</html>
